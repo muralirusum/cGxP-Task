@@ -1,0 +1,145 @@
+.companies-section {
+  background-color: #ffffff;
+  padding: 34px 0 40px 0;
+}
+
+.companies-row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 12px;
+}
+
+.company-card {
+  background-color: #ffffff;
+  border: 1px solid #c7dcf7;
+  border-radius: 12px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.company-card:hover {
+  border-color: #0066cc;
+  box-shadow: 0 10px 24px rgba(0, 102, 204, 0.12);
+  transform: translateY(-3px);
+}
+
+/* Individual Brand Styling */
+.company-logo-pfizer {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo-pfizer .pfizer-oval {
+  color: #0033aa;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 18px;
+  border: 2px solid #0033aa;
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+
+.company-logo-novartis {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.novartis-icon {
+  color: #e65100;
+  font-size: 11px;
+}
+
+.novartis-text {
+  color: #004b87;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.company-logo-merck .merck-text {
+  color: #007a78;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+
+.company-logo-thermo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.thermo-red {
+  color: #e1251b;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.thermo-sub {
+  color: #333333;
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 0.05em;
+}
+
+.company-logo-jnj .jnj-text {
+  color: #d51900;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+}
+
+.company-logo-roche .roche-badge {
+  color: #0066cc;
+  font-weight: 800;
+  font-size: 15px;
+  border: 1.8px solid #0066cc;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.company-logo-sanofi .sanofi-text {
+  color: #562873;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.company-logo-lonza .lonza-text {
+  color: #000000;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+}
+
+.company-logo-gsk .gsk-pill {
+  color: #f36d21;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+}
+
+.company-logo-abbvie .abbvie-text {
+  color: #071d49;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+  .companies-row {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .companies-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

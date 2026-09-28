@@ -1,0 +1,164 @@
+.site-footer {
+  background-color: var(--bg-subtle-blue, #f4f8fd);
+  border-top: 1px solid #d4e4f7;
+  padding: 52px 0 28px 0;
+}
+
+.footer-main-row {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  margin-bottom: 44px;
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #0066cc;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-weight: 800;
+  font-size: 21px;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  background-color: #ffffff;
+  width: fit-content;
+}
+
+.logo-cgxp {
+  color: #0066cc;
+}
+
+.logo-jobs {
+  color: #001b44;
+}
+
+.footer-brand-desc {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #2c425e;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-links a {
+  color: #0066cc;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #eff6ff;
+  border: 1px solid #d4e4f7;
+  transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+  background-color: #0066cc;
+  color: #ffffff;
+  border-color: #0066cc;
+  transform: translateY(-2px);
+}
+
+.footer-nav-cols {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.footer-col-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #001b44;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2c425e;
+  transition: all 0.15s ease;
+  display: inline-block;
+}
+
+.footer-col a:hover {
+  color: #0066cc;
+  font-weight: 600;
+  transform: translateX(2px);
+}
+
+.footer-bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  border-top: 1px solid #d4e4f7;
+  font-size: 13px;
+  color: #2c425e;
+}
+
+.copyright-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b526d;
+}
+
+.tagline-pills {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #2c425e;
+}
+
+.tagline-pills .sep {
+  color: #bfdbfe;
+}
+
+@media (max-width: 1100px) {
+  .footer-main-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-nav-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-nav-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+}
